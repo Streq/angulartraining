@@ -1,0 +1,17 @@
+<div *ngIf="publication">
+    <div class="card-body">
+        <h4 class="card-title">{{publication.title}}</h4>
+        <p class="card-text">
+            <strong>Description: </strong>
+            {{publication.description}}
+        </p>
+        <p class="card-text">
+            <strong>Date: </strong>
+            {{publication.date}}
+        </p>
+        <p class="card-text">
+            <strong>Price: </strong>
+            ${{publication.price}}
+        </p>
+    </div>
+</div>

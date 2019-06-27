@@ -34,4 +34,8 @@ export class PublicationsService {
   getPublications(): Publication[] {
     return this.publications;
   }
+  getPublication(id: number): Publication {
+    return this.publications.find((publication: Publication) => publication.id === id);
+  }
+
 }
