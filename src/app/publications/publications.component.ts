@@ -38,4 +38,8 @@ export class PublicationsComponent implements OnInit {
   ngOnInit() {
   }
 
+  share(publication:Publication) {
+    window.alert(`Thanks for sharing '${publication.title}: ${publication.description}'`);
+  }
+
 }
