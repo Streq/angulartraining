@@ -4,5 +4,7 @@
         <p class="card-text">{{publication.description}}</p>
         <p class="card-text">{{publication.price}} pesitos</p>
         <button (click)="share(publication)" class="btn btn-secondary">Share</button>
+        <app-publication-alert [publication]="publication">
+        </app-publication-alert>
     </div>
 </div>
