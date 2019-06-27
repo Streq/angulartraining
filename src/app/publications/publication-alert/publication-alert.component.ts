@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Publication } from '../model/publication';
 
 @Component({
@@ -8,7 +8,8 @@ import { Publication } from '../model/publication';
 })
 export class PublicationAlertComponent implements OnInit {
   @Input() publication: Publication;
-
+  @Output() notify = new EventEmitter();
+  
   constructor() { }
 
   ngOnInit() {

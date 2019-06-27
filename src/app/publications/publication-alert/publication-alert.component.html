@@ -1,1 +1,3 @@
-<button *ngIf="publication.price > 50"class="btn btn-warning ml-2">Notify me</button>
+<button *ngIf="publication.price > 50"
+    class="btn btn-warning ml-2"
+    (click)="notify.emit()">Notify me</button>

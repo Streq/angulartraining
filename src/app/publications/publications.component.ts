@@ -38,8 +38,12 @@ export class PublicationsComponent implements OnInit {
   ngOnInit() {
   }
 
-  share(publication:Publication) {
+  share(publication: Publication) {
     window.alert(`Thanks for sharing '${publication.title}: ${publication.description}'`);
+  }
+
+  onNotify() {
+    window.alert('You will be notified when the publication price goes below 50');
   }
 
 }
